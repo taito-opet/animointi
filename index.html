@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <!--COUNTER-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+          <!--END-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <h1>TAITOTALO</h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <a href="#" class="icon" onclick="DisplayMenu()">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </a>
+            <a href="#">ABOUT</a>
+            <a href="#">TRAVEL</a>
+            <a href="#">CONTACT</a>
+            <a href="#">SOCIAL MEDIA</a>
+        </div>
+    </nav>
+       <div class="top">
+       <div class="loading-box">
+        <div class="loading"></div>
+        <div class="counter">100</div>%
+       </div>
+       <center>
+        <div class="title">
+            <h1>TAITOTALO</h1>
+        
+            <div class="subtitle">
+        SCROLL DOWN <br>
+        &#x2193;
+            </div>
+        </div>
+        </center>
+</div>
+
+<div class="top-photos">
+    <img src="nature-3319821_1280.jpg" alt="">
+    <img src="nature-3319821_1280.jpg" alt="">
+    <img src="nature-3319821_1280.jpg" alt="">
+</div>
+
+    <script>
+        function DisplayMenu() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            }
+            else {
+                x.className = "topnav"
+            }
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+         $('.counter').counterUp({
+          delay: 13,
+          time: 1600
+         });
+        });
+    </script>
+
+
+
+
+</body>
+</html>
